@@ -9,7 +9,7 @@ exports.createProduct = async (req, res) => {
 
   const { name, description, price, quantity } = req.body;
 
-  let productName = await Product.findOne({name:name});
+  let productName = await Product.findOne({name});
 
   if (productName) {
     return res
