@@ -20,11 +20,12 @@ The project includes the following features:
 - Employ secure password storage techniques like hashing and salting.
 - Apply input validation and sanitization to prevent malicious inputs.
 
-### Product Listing and Search
+### Product Listing Search and Buy
 
 - Allow users to list products for sale.
 - Implement search functionality to help users find specific products.
 - Validate and sanitize user inputs when creating product listings.
+- Allow users to buy listed products.
 
 ### Secure API Endpoints
 
