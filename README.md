@@ -120,7 +120,7 @@ This API allows users to search for products by providing a query string `q`. Th
 - Endpoint: /api/products/search
 
 #### Query Parameters
-- `q` (string): The query string for searching products. (Required)
+- `q` (string): The query string for searching products. (Optional)
 
 ### Response
 - Status Code: 200 (OK)
