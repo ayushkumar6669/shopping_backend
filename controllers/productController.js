@@ -9,6 +9,14 @@ exports.createProduct = async (req, res) => {
 
   const { name, description, price } = req.body;
 
+  let productName = await Product.findOne({name:name});
+
+  if (productName) {
+    return res
+      .status(400)
+      .json({ message: "Product already exists" });
+  }
+
   try {
     const product = new Product({
       name,
