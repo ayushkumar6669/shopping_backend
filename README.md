@@ -94,7 +94,7 @@ This API allows users to log in by providing their email and password.
 
 ## Create Product (POST /api/products)
 
-This API allows authenticated users to create a new product by providing a name, description, and price.
+This API allows authenticated users to create a new product by providing a name, description, price and quantity.
 
 ### Request
 - Method: POST
