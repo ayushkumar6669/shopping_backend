@@ -8,6 +8,7 @@ This Node project consists of an online marketplace where users can buy and sell
 - [User Login](#user-login-post-apiauthlogin)
 - [Create Product](#create-product-post-apiproducts)
 - [Search Products](#search-products-get-apiproductssearch)
+- [Buy Product](#buy-products-post-apiproductsbuy)
 
 ## Features
 
@@ -102,8 +103,9 @@ This API allows authenticated users to create a new product by providing a name,
 
 #### Request Body
 - `name` (string): The name of the product. (Required)
-- `description` (string): The description of the product.
+- `description` (string): The description of the product. (Required)
 - `price` (number): The price of the product. (Required)
+- `quantity` (number): The total number of products. (Required)
 
 ### Response
 - Status Code: 201 (Created)
@@ -123,6 +125,23 @@ This API allows users to search for products by providing a query string `q`. Th
 ### Response
 - Status Code: 200 (OK)
 - Body: An array of products that match the search query.
+
+## Buy Product (POST /api/products/buy)
+
+This API allows authenticated users to buy product by providing a name and quantity.
+
+### Request
+- Method: POST
+- Endpoint: /api/products/buy
+- Authentication: JWT token in the request headers.
+
+#### Request Body
+- `name` (string): The name of the product. (Required)
+- `quantity` (number): The total number of products. (Required)
+
+### Response
+- Status Code: 200 (OK)
+- Body: Success message and updated product quantity
 
 ---
 
