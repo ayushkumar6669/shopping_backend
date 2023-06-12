@@ -7,7 +7,7 @@ exports.createProduct = async (req, res) => {
     return res.status(400).json({ errors: errors.array() });
   }
 
-  const { name, description, price } = req.body;
+  const { name, description, price, quantity } = req.body;
 
   let productName = await Product.findOne({name:name});
 
@@ -22,6 +22,7 @@ exports.createProduct = async (req, res) => {
       name,
       description,
       price,
+      quantity,
       seller: req.user.id,
     });
     await product.save();
