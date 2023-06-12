@@ -1,13 +1,35 @@
-# Node Project API Documentation 
-
-This documentation provides an overview of the APIs available in this Node project.
+# Online Marketplace Node Project
+This Node project consists of an online marketplace where users can buy and sell products. The application includes user authentication, input validation, secure API endpoints, error handling, and scalability considerations. Users can register, login, buy and sell products within the application.
 
 ## Table of Contents
+- [Installation](#installation)
 - [Installation](#installation)
 - [User Registration](#user-registration-post-apiauthregister)
 - [User Login](#user-login-post-apiauthlogin)
 - [Create Product](#create-product-post-apiproducts)
 - [Search Products](#search-products-get-apiproductssearch)
+
+## Features
+
+The project includes the following features:
+
+### User Registration and Authentication
+
+- Implement user registration and login functionality.
+- Employ secure password storage techniques like hashing and salting.
+- Apply input validation and sanitization to prevent malicious inputs.
+
+### Product Listing and Search
+
+- Allow users to list products for sale.
+- Implement search functionality to help users find specific products.
+- Validate and sanitize user inputs when creating product listings.
+
+### Secure API Endpoints
+
+- Develop API endpoints to handle user registration, authentication, and product management.
+- Implement secure authentication mechanisms like JSON Web Tokens (JWT) for API authorization.
+- Apply input validation and sanitization to prevent injection attacks.
 
 ## Installation
 
