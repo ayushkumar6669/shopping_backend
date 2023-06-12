@@ -8,7 +8,7 @@ This Node project consists of an online marketplace where users can buy and sell
 - [User Login](#user-login-post-apiauthlogin)
 - [Create Product](#create-product-post-apiproducts)
 - [Search Products](#search-products-get-apiproductssearch)
-- [Buy Product](#buy-products-post-apiproductsbuy)
+- [Buy Product](#buy-product-post-apiproductsbuy)
 
 ## Features
 
