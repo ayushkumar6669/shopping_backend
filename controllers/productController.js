@@ -53,7 +53,7 @@ exports.updateProductQuantity = async (req, res) => {
       await Product.findByIdAndDelete(product._id);
       return res
         .status(200)
-        .json({ message: "Quantity zero hence roduct deleted" });
+        .json({ message: "Quantity zero hence product deleted" });
     }
 
     product.quantity = updatedQuantity;
