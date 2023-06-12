@@ -54,7 +54,7 @@ npm install
 ```bash
 npm start
 ```
-
+The server should now be running locally on **http://localhost:3000**.
 
 ## User Registration (POST /api/auth/register)
 
