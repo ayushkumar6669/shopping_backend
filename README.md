@@ -2,7 +2,7 @@
 This Node project consists of an online marketplace where users can buy and sell products. The application includes user authentication, input validation, secure API endpoints, error handling, and scalability considerations. Users can register, login, buy and sell products within the application.
 
 ## Table of Contents
-- [Installation](#installation)
+- [Features](#features)
 - [Installation](#installation)
 - [User Registration](#user-registration-post-apiauthregister)
 - [User Login](#user-login-post-apiauthlogin)
