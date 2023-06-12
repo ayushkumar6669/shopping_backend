@@ -137,7 +137,7 @@ This API allows authenticated users to buy product by providing a name and quant
 
 #### Request Body
 - `name` (string): The name of the product. (Required)
-- `quantity` (number): The total number of products. (Required)
+- `quantity` (number): The number of products to be bought. (Required)
 
 ### Response
 - Status Code: 200 (OK)
