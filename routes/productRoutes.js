@@ -11,9 +11,21 @@ router.post(
     check('name', 'Name is required').notEmpty(),
     check('description', 'Description is required').notEmpty(),
     check('price', 'Price is required').isNumeric(),
+    check('quantity', 'Quantity is required').isNumeric(),
   ],
   productController.createProduct
 );
+
+router.post(
+  '/buy',
+  authMiddleware,
+  [
+    check('name', 'Name is required').notEmpty(),
+    check('quantity', 'Quantity is required').isNumeric(),
+  ],
+  productController.updateProductQuantity
+);
+
 
 router.get('/search', productController.searchProducts);
 
