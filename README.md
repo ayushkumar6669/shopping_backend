@@ -1,12 +1,38 @@
-# Node Project API Documentation
+# Node Project API Documentation 
 
-This documentation provides an overview of the APIs available in the Node project.
+This documentation provides an overview of the APIs available in this Node project.
 
 ## Table of Contents
+- [Installation](#installation)
 - [User Registration](#user-registration-post-apiauthregister)
 - [User Login](#user-login-post-apiauthlogin)
 - [Create Product](#create-product-post-apiproducts)
 - [Search Products](#search-products-get-apiproductssearch)
+
+## Installation
+
+To run this project locally, please follow these steps:
+
+### Clone the repository:
+```bash
+git clone https://github.com/ayushkumar6669/shopping_backend.git
+```
+
+### Navigate to the project directory:
+```bash
+cd shopping_backend
+```
+
+### Install the required dependencies:
+```bash
+npm install
+```
+
+### Start the local server:
+```bash
+npm start
+```
+
 
 ## User Registration (POST /api/auth/register)
 
